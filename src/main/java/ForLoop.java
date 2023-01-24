@@ -1,5 +1,3 @@
-
-
 public class ForLoop {
     /**
      *
@@ -39,10 +37,13 @@ public class ForLoop {
      *      @param end the value of i where the for loop should end (provided that the for loop is incremented with i++)
      *      @return the sum of all numbers between start and end, with start inclusive and end exclusive.
      */
+
     public String returnNumbers(int start, int end){
         String buildingString = "";
 
-//        code here
+        for(int i = start; i < end; i++) {
+            buildingString = buildingString + i + " ";
+        }
 
         return buildingString;
     }
